@@ -8,7 +8,8 @@ import java.rmi.server.UnicastRemoteObject;
 public class Server implements CustomRMI {
 	@Override
 	public String testRMICall() throws RemoteException {
-		return "This is a simple test of Java's RMI implementation";
+		return	"This is a simple example of Java's RMI implementation.\n" +
+				"Notice how this method is in the server class yet called from the client object.";
 	}
 
 	public static void main(String[] args) {
